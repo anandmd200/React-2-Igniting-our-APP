@@ -168,6 +168,23 @@ But it assures that it defenetely run in the chrome.
   <execute using npm> parcel <entypoint of APP>
 ```
 - add scripts for “start” and “build” with parcel commands
+#### package.json
+
+```javascript
+ "scripts": {
+    "start": "parcel index.html",
+    "build":"parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+}
+```
+Now, for staring & building use following command: 
+
+Before Script | After Script
+------------ | -------------
+`npx parcel index.htm` | `npm run start` OR `npm start`
+`npx parcel build index.html`  | `npm run build` or `npm build`
+
 - add `.gitignore` file
 ```bash
   npm init 
